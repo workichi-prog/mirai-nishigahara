@@ -10,7 +10,7 @@ body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-ser
 .nav a{color:var(--white);text-decoration:none}
 @media(max-width:480px){
   .nav{flex-direction:column;align-items:flex-start;gap:8px}
-  .nav .brand{font-size:18px;white-space:nowrap;word-break:keep-all}
+  .nav .brand{font-size:18px}
   .nav ul{gap:12px;row-gap:6px}
 }
 
@@ -26,10 +26,10 @@ body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-ser
 .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:18px;min-width:0}
 .card h3{margin:8px 0;color:#7A1F1F}
 
-/* Prevent any media from overflowing */
-img, iframe{max-width:100%;height:auto}
+/* Media safety */
+img, iframe{max-width:100%;height:auto;display:block}
 
-/* Responsive map: keep within card width */
+/* Responsive map */
 .map-embed{position:relative;width:100%;padding-top:56.25%;border-radius:12px;overflow:hidden;border:1px solid #e5e7eb}
 .map-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
 
@@ -38,6 +38,12 @@ img, iframe{max-width:100%;height:auto}
 footer{background:#7A1F1F;color:#f1f5f9;margin-top:36px}
 footer h4{color:#fff;margin:0 0 8px}
 .copy{text-align:center;padding:12px;border-top:1px solid rgba(255,255,255,.2)}
+
+/* Mobile footer: 1 column */
+@media(max-width:480px){
+  .footer-grid{grid-template-columns:1fr}
+}
+
 .img-cover{width:100%;height:auto;border-radius:12px;border:1px solid #e5e7eb}
 .menu-table{width:100%;border-collapse:collapse}
 .menu-table th, .menu-table td{border-bottom:1px solid #e5e7eb;padding:10px;text-align:left}
