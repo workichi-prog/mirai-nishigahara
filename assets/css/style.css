@@ -1,26 +1,27 @@
 
-:root{--bg:#0A2540;--accent:#FFC107;--text:#1f2937;--gold:#C9A227;--white:#FFF;}
+:root{--bg:#FF9933;--accent:#0B7A3E;--text:#2c2c2c;--white:#FFF;--cream:#FFF7E9;}
 *{box-sizing:border-box}
-body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;margin:0;color:var(--text);background:#fafafa}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;margin:0;color:var(--text);background:var(--cream)}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 24px;background:var(--bg);color:var(--white);position:sticky;top:0;z-index:10}
 .nav .brand{font-weight:700}
 .nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
 .nav a{color:var(--white);text-decoration:none}
-.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:center;padding:48px 24px}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:center;padding:48px 24px;background:linear-gradient(180deg, rgba(255,153,51,.12), rgba(255,153,51,.04))}
 .hero .card{background:var(--white);border:1px solid #e5e7eb;border-radius:12px;padding:24px;box-shadow:0 1px 12px rgba(0,0,0,.04)}
+.hero h1{color:#7A1F1F}
 .cta{display:flex;gap:12px;margin-top:12px}
-.cta a{background:var(--bg);color:var(--white);padding:10px 14px;border-radius:8px;text-decoration:none}
+.cta a{background:var(--accent);color:var(--white);padding:10px 14px;border-radius:8px;text-decoration:none}
 .section{padding:32px 24px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:18px}
-.card h3{margin:8px 0;color:var(--bg)}
-.badge{display:inline-block;background:var(--accent);color:#000;padding:4px 10px;border-radius:999px;font-size:12px}
+.card h3{margin:8px 0;color:#7A1F1F}
+.badge{display:inline-block;background:#FFD166;color:#7A1F1F;padding:4px 10px;border-radius:999px;font-size:12px}
 .footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:24px}
-footer{background:#111827;color:#e5e7eb;margin-top:36px}
+footer{background:#7A1F1F;color:#f1f5f9;margin-top:36px}
 footer h4{color:#fff;margin:0 0 8px}
-.copy{text-align:center;padding:12px;border-top:1px solid #374151}
+.copy{text-align:center;padding:12px;border-top:1px solid rgba(255,255,255,.2)}
 .img-cover{width:100%;height:auto;border-radius:12px;border:1px solid #e5e7eb}
 .menu-table{width:100%;border-collapse:collapse}
 .menu-table th, .menu-table td{border-bottom:1px solid #e5e7eb;padding:10px;text-align:left}
-.kicker{color:var(--gold);letter-spacing:.08em;font-size:12px;text-transform:uppercase}
+.kicker{color:#0B7A3E;letter-spacing:.08em;font-size:12px;text-transform:uppercase}
 @media(max-width:900px){.hero{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}}
